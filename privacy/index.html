@@ -31,15 +31,16 @@
 <h2>1. 기기 밖으로 나가지 않는 정보</h2>
 <ul>
   <li>앱으로 찍거나 옮겨 온 사진·영상, 그 안의 촬영 시각·위치(GPS), 계정(공간) 이름과 앱 설정은 모두 사용자의 기기 안, 이 앱 전용 저장공간에만 저장됩니다.</li>
-  <li>이 정보는 앱 제작자에게 전송되지 않습니다. 사진·영상과 계정은 기기의 자동 백업(Google 백업·iCloud 백업)에도 포함되지 않습니다.</li>
-  <li>사용자가 직접 '공유'나 '사진 앱으로 내보내기'를 누른 경우에만, 사용자가 고른 곳(메신저, 에어드랍, 폰 사진 앱 등)으로 파일이 전달됩니다. 이후의 처리는 해당 서비스의 방침을 따릅니다.</li>
+  <li>이 정보는 앱 제작자에게 전송되지 않습니다. 계정에 들어 있는 사진·영상은 Google 백업·iCloud 백업에도 포함되지 않습니다. 다만 Android에서 새 폰으로 직접 옮기기(기기 간 전송)를 하면 앱 정보가 새 폰으로 함께 옮겨질 수 있습니다.</li>
+  <li>iOS에서 사진 앱의 '공유 → 아더캠'으로 넘긴 사진·영상은 아더캠을 열 때까지 이 앱 전용 공유 공간에 잠시 보관되고, 앱을 열어 계정에 넣으면 바로 지워집니다. 공유 화면에 계정 목록을 보여 주기 위해 계정 이름 목록도 같은 공간에 둡니다. 이 공간은 기기의 iCloud 백업에 포함될 수 있습니다.</li>
+  <li>사용자가 직접 '공유', '사진 앱으로 내보내기', '지도에서 보기'(사진의 위치를 지도 앱으로 보냄)를 누른 경우에만, 사용자가 고른 곳(메신저, 에어드랍, 폰 사진 앱, 지도 앱 등)으로 파일이나 정보가 전달됩니다. 이후의 처리는 해당 서비스의 방침을 따릅니다.</li>
 </ul>
 
 <h2>2. 앱이 요청하는 권한과 이유</h2>
 <ul>
   <li><b>카메라·마이크</b>: 사진·영상 촬영(영상 소리 녹음).</li>
   <li><b>위치</b>: 찍은 사진에 촬영 위치를 표준 EXIF 정보로 기록하기 위해. 위치는 사진 파일 안에만 저장됩니다.</li>
-  <li><b>사진·동영상(폰 사진첩)</b>: 폰 사진첩이나 사진 앱 공유로 고른 사진을 앱으로 옮겨 오기 위해. 원본에 담긴 촬영 위치를 그대로 유지하고, 옮긴 사진과 같은 원본을 찾아 <b>사용자가 확인한 뒤에만</b> 폰의 휴지통('최근 삭제된 항목')으로 보냅니다. 휴지통의 원본은 폰에서 일정 기간(보통 30일) 안에 되살릴 수 있습니다. 앱이 고르지 않은 다른 사진을 읽어 저장하거나 지우지 않습니다.</li>
+  <li><b>사진·동영상(폰 사진첩)</b>: 폰 사진첩이나 사진 앱 공유로 고른 사진을 앱으로 옮겨 오기 위해. 원본에 담긴 촬영 위치를 그대로 유지하고, 옮긴 사진과 같은 원본을 찾아 <b>사용자가 확인한 뒤에만</b> 폰의 휴지통('최근 삭제된 항목')으로 보냅니다. 휴지통의 원본은 폰에서 일정 기간(보통 30일) 안에 되살릴 수 있습니다. 이를 위해 앱 안 고르기 화면에 폰 사진첩 목록을 보여 주고, 옮긴 사진과 똑같은 원본을 찾으려고 크기·찍은 시각이 비슷한 사진을 기기 안에서만 비교합니다. 비교에 쓴 다른 사진은 저장하거나 지우거나 기기 밖으로 보내지 않습니다. iCloud 사진에만 있는 원본은 옮기기·비교를 위해 Apple의 iCloud에서 내려받을 수 있습니다.</li>
   <li><b>사진 앱에 추가</b>: 사용자가 '사진 앱으로 내보내기'를 누른 항목의 복사본을 폰 사진 앱에 저장하기 위해.</li>
   <li><b>생체 인증·기기 암호</b>: 사용자가 앱 잠금을 켠 경우에만. 인증은 기기(Android·iOS)가 처리하며, 앱은 지문·얼굴 정보를 받지 않습니다.</li>
 </ul>
@@ -79,15 +80,16 @@
 <h2>1. Data that stays on your device</h2>
 <ul>
   <li>Photos and videos you take or import, the capture time and location (GPS) stored in them, your account (space) names and app settings are stored only on your device, in the app's private storage.</li>
-  <li>This data is never sent to the developer. Your photos, videos and accounts are also excluded from automatic device backups (Google backup and iCloud backup).</li>
-  <li>A file leaves the app only when you tap Share or Export to Photos yourself, and only to the destination you choose (messaging apps, AirDrop, your phone's photo app, etc.). From then on, that service's policy applies.</li>
+  <li>This data is never sent to the developer. Photos and videos in your accounts are excluded from Google backup and iCloud backup. However, on Android, a direct phone-to-phone transfer to a new device may copy the app's data to the new phone.</li>
+  <li>On iOS, photos and videos you send with Share → OtherCam from the Photos app are kept briefly in the app's private shared space until you open OtherCam, and are deleted as soon as they are added to an account. To show your accounts on the share screen, the list of account names is kept in the same space. This space may be included in your iCloud device backup.</li>
+  <li>A file or information leaves the app only when you tap Share, Export to Photos or View on map (which sends the photo's location to a map app) yourself, and only to the destination you choose (messaging apps, AirDrop, your phone's photo app, a map app, etc.). From then on, that service's policy applies.</li>
 </ul>
 
 <h2>2. Permissions and why the app asks for them</h2>
 <ul>
   <li><b>Camera and microphone</b>: to take photos and videos (with sound).</li>
   <li><b>Location</b>: to record where a photo was taken as standard EXIF data inside the photo file only.</li>
-  <li><b>Photos and videos (photo library)</b>: to move photos you pick, in the app or by sharing from your photo app, into OtherCam. The original's location data is kept, and the matching original is moved to your phone's trash ("Recently Deleted") <b>only after you confirm</b>. You can restore it from the trash on your phone for a limited time (usually 30 days). The app does not read, save or delete photos you didn't pick.</li>
+  <li><b>Photos and videos (photo library)</b>: to move photos you pick, in the app or by sharing from your photo app, into OtherCam. The original's location data is kept, and the matching original is moved to your phone's trash ("Recently Deleted") <b>only after you confirm</b>. You can restore it from the trash on your phone for a limited time (usually 30 days). To do this, the app shows your photo library in its picker and, to find the exact original, compares photos of similar size and capture time on your device only. Other photos used for this comparison are never saved, deleted or sent anywhere. Originals stored only in iCloud Photos may be downloaded from Apple's iCloud for importing and comparison.</li>
   <li><b>Add to Photos</b>: to save a copy of the items you choose to export to your phone's photo app.</li>
   <li><b>Biometrics / device passcode</b>: only if you turn on the app lock. Authentication is handled by Android or iOS; the app never receives your fingerprint or face data.</li>
 </ul>
